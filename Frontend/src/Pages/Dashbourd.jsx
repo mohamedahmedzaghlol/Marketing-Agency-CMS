@@ -1,12 +1,14 @@
 import Navbar from "../componts/Dashbourd/Navbar/Navbar";
 import Page22 from "../componts/Dashbourd/pages2/Page";
-import Hero from "../componts/hero/hero";
+import Sidebar from "../componts/Dashbourd/Sidbar/Sidbar";
+
 function Dashbourd(){
     return(
         <>
-        <Navbar />
+        <Sidebar />      
          <Page22/>
-         <Hero/>
+         <ManagePosts />
+        
          
 </>
     )
