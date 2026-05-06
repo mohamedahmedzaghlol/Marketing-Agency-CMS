@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "69f9a4047da62c159b324528"
+  },
+  "name": "Content Marketing",
+  "slug": "content-marketing",
+  "description": "Strategies and execution for blog posts, articles, and storytelling to engage the audience.",
+  "colorCode": "#FF5722",
+  "createdAt": {
+    "$date": "2026-05-05T08:02:12.369Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T08:02:12.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f9a4847da62c159b32452a"
+  },
+  "name": "Search Engine Optimization",
+  "slug": "search-engine-optimization",
+  "description": "Improving website visibility on search engines like Google to drive organic traffic.",
+  "colorCode": "#4CAF50",
+  "createdAt": {
+    "$date": "2026-05-05T08:04:20.728Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T08:04:20.728Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f9a4a37da62c159b32452b"
+  },
+  "name": "Social Media Marketing",
+  "slug": "social-media-marketing",
+  "description": "Managing presence and ads on platforms like Facebook, Instagram, and LinkedIn.",
+  "colorCode": "#2196F3",
+  "createdAt": {
+    "$date": "2026-05-05T08:04:51.330Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T08:04:51.330Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f9a4ae7da62c159b32452c"
+  },
+  "name": "UI/UX Design",
+  "slug": "uiux-design",
+  "description": "Crafting user-centric designs and intuitive interfaces for digital products.",
+  "colorCode": "#9C27B0",
+  "createdAt": {
+    "$date": "2026-05-05T08:05:02.827Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T08:05:02.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f9a4ba7da62c159b32452d"
+  },
+  "name": "Brand Identity",
+  "slug": "brand-identity",
+  "description": "Building brand voices, logos, and visual guidelines for businesses.",
+  "colorCode": "#E91E63",
+  "createdAt": {
+    "$date": "2026-05-05T08:05:14.395Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T08:05:14.395Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f9eb191dd38c2373b445e3"
+  },
+  "name": "Performance Marketing",
+  "slug": "performance-marketing",
+  "description": "Data-driven advertising focused on measurable results and high ROI.",
+  "colorCode": "#FFC107",
+  "createdAt": {
+    "$date": "2026-05-05T13:05:29.740Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T13:05:29.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fa1569380796941bc1dee5"
+  },
+  "name": "Pc Gaming",
+  "slug": "pc-gaming",
+  "description": "Data-driven advertising focused on measurable results and high ROI.",
+  "colorCode": "#FFC107",
+  "createdAt": {
+    "$date": "2026-05-05T16:06:01.111Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-05T16:06:01.111Z"
+  },
+  "__v": 0
+}]
