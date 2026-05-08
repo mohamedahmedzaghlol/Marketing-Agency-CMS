@@ -1,0 +1,28 @@
+.appWrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--page-bg);
+}
+ 
+.mainContent {
+  margin-left: 220px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.pageBody {
+  margin-top: 56px;
+  padding: 32px 28px;
+  flex: 1;
+}
+ 
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+  }
+  .pageBody {
+    padding: 20px 16px;
+  }
+}
+ 
