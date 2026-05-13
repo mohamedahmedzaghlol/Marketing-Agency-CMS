@@ -1,41 +1,31 @@
-// Globale Error Handling Middleware to Handle Error from(express-async-handler)
+//const { stack } = require("../routes/categoryRoute");
+
 const globalError = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "error";
-
-  // res.status(err.statusCode).json({
-  //   status: err.status,
-  //   error: err,
-  //   messge: err.messge,
-  //   stack: err.stack,
-  // });
-
-  //Refactor above code
   if (process.env.NODE_ENV.trim() === "development") {
-    sendErrorDev(err,res);
-  }
-  else{
-    sendErrorProd(err,res);
+    sendErrorForDev(err, res);
+  } else {
+    sendErrorForProd(err, res);
   }
 };
 
-//Showing Error in Development Mode
-const sendErrorDev = (err, res) => {
+//Node_ENV=development
+const sendErrorForDev = (err,res) => {
   return res.status(err.statusCode).json({
     status: err.status,
     error: err,
-    messge: err.messge,
-    stack: err.stack,
+    message: err.message,
+    stack: err.stack
   });
 };
 
-//Showing Error in Development Mode
-// Import cross-env to use it package.json
-const sendErrorProd = (err,res) => {
+//Node_ENV=production
+const sendErrorForProd = (err,res) => {
   return res.status(err.statusCode).json({
     status: err.status,
-    messge: err.messge,
+    message: err.message
   });
-}
+};
 
 module.exports = globalError;

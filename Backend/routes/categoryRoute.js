@@ -6,7 +6,7 @@ const {
   getCategory,
   createCategory,
   updateCategory,
-  deleteCategory
+  deleteCategory,
 } = require("../services/categoryService");
 
 //Import categoryValidator.js
@@ -14,18 +14,39 @@ const {
   getCategoryValidator,
   createCategoryValidator,
   updateCategoryValidator,
-  deleteCatagoryValidator
+  deleteCatagoryValidator,
 } = require("../utils/validator/categoryValidator");
+
+// Import authService
+const authService = require("../services/authService");
 
 //Import router
 const router = express.Router();
 
-router.route("/").get(getCategories).post(createCategoryValidator,createCategory);
+router
+  .route("/")
+  .get(getCategories)
+  .post(
+    authService.protect,
+    authService.allowTo("manger", "admin"),
+    createCategoryValidator,
+    createCategory,
+  );
 
 router
   .route("/:id")
-  .get( getCategoryValidator,getCategory)
-  .put(updateCategoryValidator,updateCategory)
-  .delete(deleteCatagoryValidator,deleteCategory)
+  .get(getCategoryValidator, getCategory)
+  .put(
+    authService.protect,
+    authService.allowTo("manger", "admin"),
+    updateCategoryValidator,
+    updateCategory,
+  )
+  .delete(
+    authService.protect,
+    authService.allowTo("admin"),
+    deleteCatagoryValidator,
+    deleteCategory,
+  );
 //Export router to use it in server.js
 module.exports = router;

@@ -13,6 +13,10 @@ const dbConnection = require("./config/database");
 dbConnection();
 //Import categoryRoute from routes
 const categoryRoute = require("./routes/categoryRoute");
+//Import userRoute from routes
+const userRoute = require("./routes/userRoute");
+//Import authRoute from routes
+const authRoute = require("./routes/authRoute");
 //Import ApiError to handle Operational error
 const ApiError = require("./utils/apiError");
 //Import globalError from middlewares folder from errorMiddleware.js
@@ -32,7 +36,10 @@ if (process.env.NODE_ENV=="development") {
 // Mount Routes
 // http://localhost:3000/api/v1/categories
 app.use("/api/v1/categories", categoryRoute);
-
+// http://localhost:3000/api/v1/users
+app.use("/api/v1/users", userRoute);
+//http://localhost:3000/api/v1/auth/signup
+app.use("/api/v1/auth", authRoute);
 // Midlle ware to handle error that I cannot handle it (Such as URL Not Found)
 //Example ----> URL : http://localhost:3000/api/v2/categories
 app.all(/.*/,(req,res,next) => {
