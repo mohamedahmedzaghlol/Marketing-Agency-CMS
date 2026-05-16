@@ -7,6 +7,8 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "config.env" });
 //Import morgan
 const morgan = require("morgan");
+//Import  cors
+const cors = require("cors");
 //Import dbConnection
 const dbConnection = require("./config/database");
 //Connect with database
@@ -25,6 +27,11 @@ const globalError = require("./middlewares/errorMiddleware");
 //take object or instance from express to use its methods
 const app = express();
 
+//Use cors
+// Enable other domains to access my application
+app.use(cors());
+app.options(/.*/, cors());
+
 // Middlewares
 app.use(express.json()); // to parse json to js object
 
@@ -38,7 +45,7 @@ if (process.env.NODE_ENV=="development") {
 app.use("/api/v1/categories", categoryRoute);
 // http://localhost:3000/api/v1/users
 app.use("/api/v1/users", userRoute);
-//http://localhost:3000/api/v1/auth/signup
+//http://localhost:3000/api/v1/auth
 app.use("/api/v1/auth", authRoute);
 // Midlle ware to handle error that I cannot handle it (Such as URL Not Found)
 //Example ----> URL : http://localhost:3000/api/v2/categories
