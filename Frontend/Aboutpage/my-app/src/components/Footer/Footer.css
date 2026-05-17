@@ -1,0 +1,19 @@
+.footer {
+  background-color: #0f0f1a;
+  text-align: center;
+  padding: 20px 0px;
+  border-top: 2px solid #e05c1a;
+}
+
+.footer-logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}

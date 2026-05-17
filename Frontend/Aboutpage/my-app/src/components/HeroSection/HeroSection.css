@@ -1,0 +1,18 @@
+.hero-section{
+    background-color:#1a1a35;
+    text-align: center;
+    color: aliceblue;
+    padding: 45px 0px;
+    clip-path: ellipse(100% 85% at 50% 0%);
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  color: #aaa;
+  font-size: 1.1rem;
+}
