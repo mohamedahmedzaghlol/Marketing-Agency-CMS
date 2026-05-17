@@ -1,5 +1,7 @@
 
+
 import styles from "./Page.module.css"
+import { Link } from "react-router-dom";
 function Page22() {
     return (
         <>
@@ -7,9 +9,9 @@ function Page22() {
       <div className="d-flex justify-content-between align-items-center">
   <h3 className="mb-0">Dashboard Overview</h3>
   <div>
-    <a href="#" className="btn bg-warning">
-      + New post
-    </a>
+   <Link to="/new-post" className="btn btn-warning text-dark fw-bold">
+  + New post
+</Link>
   </div>
 </div>
 <div className="row g-4 mb-4">
@@ -58,66 +60,48 @@ function Page22() {
     <table class="table">
       <thead>
         <tr>
-          
           <th scope="col">TITLE</th>
           <th scope="col">CAEOORY</th>
           <th scope="col">STATUS</th>
           <th scope="col">DATA</th>
           <th scope="col">ACTION</th>
-    
         </tr>
       </thead>
       <tbody>
         <tr>
-        
           <td>Hyndaia 120</td>
           <td>Hatchback care</td>
           <td><span className="badge bg-success">Published</span></td>
           <td>5/5/2026</td>
           <td><button className="btn btn-sm btn-outline-primary">
                     <i className="fa-solid fa-pencil"></i>
-    
-                  </button>
-                  
-                  </td>
-                  
+                  </button>   
+                 </td>          
         </tr>
-        <tr>
-         
+        <tr> 
           <td>Ford focus</td>
          <td>Hatchback care</td>
            <td><span className="badge bg-success">Published</span></td>
            <td>5/5/2026</td>
           <td><button className="btn btn-sm btn-outline-primary">
                     <i className="fa-solid fa-pencil"></i>
-    
                   </button>
-                 
                   </td>
         </tr>
         <tr>
-        
           <td>Hatchback care</td>
           <td>Hatchback care</td>
            <td><span className="badge bg-success">Published</span></td>
           <td>5/5/2026</td>
           <td><button className="btn btn-sm btn-outline-primary">
                     <i className="fa-solid fa-pencil"></i>
-    
-                  </button>
-                 
+                  </button>   
                   </td>
         </tr>
-        
-        
-        
       </tbody>
     </table>
-
   </div>
 </div>
-
-         
         </>
     )
 }
