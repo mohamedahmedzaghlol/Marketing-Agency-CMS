@@ -1,0 +1,4 @@
+/* App.css - styles for the root App component */
+.main-content {
+  min-height: 80vh;  /* Pushes footer down when content is short */
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --brand-dark: #0f1117;
+  --brand-accent: #e8611a;
+  --brand-accent-light: #ff8c42;
+  --brand-muted: #6c757d;
+  --brand-light-bg: #f8f9fb;
+  --card-radius: 12px;
+  --transition: 0.25s ease;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #fff;
+  color: #1a1a2e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* ── Badge ── */
+.badge-category {
+  background: rgba(232,97,26,0.12);
+  color: var(--brand-accent);
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+

@@ -1,0 +1,16 @@
+/* Footer.css - styles for the public footer */
+
+.footer-brand-icon {
+  color: #e8611a;
+}
+
+.footer-brand-text {
+  color: #fff;
+}
+.site-footer {
+  background: var(--brand-dark);
+  color: rgba(255,255,255,0.55);
+  padding: 28px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--brand-accent);
+}

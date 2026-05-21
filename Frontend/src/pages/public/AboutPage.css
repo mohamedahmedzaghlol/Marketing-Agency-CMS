@@ -1,0 +1,52 @@
+/* AboutPage.css - Styles for the About & Contact page */
+
+/* Hero subtitle text (same as HomePage, but we keep separate) */
+.about-hero-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+
+.stats-card {
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+.stats-icon {
+  font-size: 1.5rem;
+  color: #e8611a;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.stats-number {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.stats-label {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Contact form card */
+.contact-card {
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1.5rem;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #e8611a;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #ff8c42;
+  color: #fff;
+}

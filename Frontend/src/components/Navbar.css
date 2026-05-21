@@ -1,0 +1,33 @@
+
+.brand-icon {
+  color: #e8611a;
+}
+
+
+.admin-btn {
+  background: #e8611a;
+  color: #fff;
+  border-radius: 20px;
+}
+.public-navbar {
+  border-bottom: 2px solid var(--brand-accent);
+  background: var(--brand-dark) !important;
+}
+
+.public-navbar .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+
+.public-navbar .nav-link {
+  color: rgba(255,255,255,0.75) !important;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.public-navbar .nav-link:hover,
+.public-navbar .nav-link.active {
+  color: var(--brand-accent-light) !important;
+}
